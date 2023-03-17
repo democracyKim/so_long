@@ -25,7 +25,7 @@ s: down
 d: right  
 esc: exit the game
 
-### Code
+### rendering Code
 Instead of loading all the map images each time, update only the images at specific coordinates when game components (Dino, enemies, rings, spellbook) change.
 
 ```c
@@ -71,6 +71,7 @@ void	so_long(char *map_file)
 }
 ```
 
+Make enemy moves randomly. 
 ```c
 static int	get_random_direction(void)
 {
